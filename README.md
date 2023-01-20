@@ -1,7 +1,7 @@
 # IQVIA Frontend Assessment
 
 ## Instructions
-1. Create a table consisting of countries with their corresponding data as shown below. Examples of the data structure are listed below for reference as well.
+1. Create a table consisting of countries with their corresponding data as shown below. Mock data is provided for you in `/src` directory. Also, see reference to the Country interface below.
 2. Build sorting capabilities that are triggered when selecting table headers: ascending, descending and none. You only need to support sorting one column at a time.
 
 <br />
