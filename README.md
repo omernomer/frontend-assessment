@@ -7,7 +7,7 @@
 3. Please push up to your repo and email a link to us at __________.
 
 ## Instructions
-1. Create a table consisting of countries with their corresponding data as shown below. Mock data is provided for you in `/src` directory. Also, see reference to the Country interface below.
+1. Create a table consisting of countries with their corresponding data as shown below. Mock data is provided for you in `/src` directory. Also, see reference to the Country type definition below.
 2. Build sorting capabilities that are triggered when selecting table headers: ascending, descending and none. You only need to support sorting one column at a time.
 
 *This assessment should take no longer than an hour to complete.*
