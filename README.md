@@ -1,6 +1,6 @@
 # IQVIA Frontend Assessment
 
-## Environmnet Setup
+## Environment Setup
 1. Fork and clone this repo to your local machine.
 2. This project is setup using Create React App and you can use either `npm` or `yarn` to install dependencies.
 2. Run `npm start` or `yarn start` to spin up a live dev server.
