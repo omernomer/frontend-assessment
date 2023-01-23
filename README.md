@@ -4,7 +4,7 @@
 1. Fork and clone this repo to your local machine.
 2. This project is setup using Create React App and you can use either `npm` or `yarn` to install dependencies.
 2. Run `npm start` or `yarn start` to spin up a live dev server.
-3. Please push up to your repo and email a link to us at __________.
+3. Please push up to your repo and email a link to us at <jeremiah.brown@iqvia.com>.
 
 ## Instructions
 1. Create a table consisting of countries with their corresponding data as shown below. Mock data is provided for you in `/src` directory. Also, see reference to the Country type definition below.
