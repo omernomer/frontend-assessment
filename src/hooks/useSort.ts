@@ -7,6 +7,7 @@ export const useSort = (
 ) => {
   const [sortBy, setSortBy] = useState<SortOptions>(initialSortBy);
   const [sortDirection, setSortDirection] = useState<SortDirection>(initialSortDirection);
+  
   const sortCountriesBy = (key: SortOptions) => {
     if (sortBy === key) {
       setSortDirection(

@@ -1,6 +1,7 @@
 import { columns } from "data/columns";
 import { colors, greyThinBorder } from "styleConstants";
 import { SortOptions, StylingObject } from "types";
+import { formatKeyIndex } from "utils/formatKeyIndex";
 
 const styles: StylingObject = {
   th: {
@@ -24,11 +25,11 @@ function TableHead({ sortCountriesBy, renderSortIcon }: TableHeadProps) {
   return (
     <thead>
       <tr>
-        {columns.map((key) => {
+        {columns.map((key, index) => {
           return (
             <th
               style={styles.th}
-              key={key}
+              key={formatKeyIndex(key, index)}
               onClick={() => sortCountriesBy(key)}
             >
               {key} {renderSortIcon(key)}

@@ -1,0 +1,1 @@
+export const formatKeyIndex = (key: string, index: number) => `${key}-${index}`;

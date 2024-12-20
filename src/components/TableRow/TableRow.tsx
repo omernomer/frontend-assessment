@@ -1,6 +1,7 @@
 import { columns } from "data/columns";
 import { greyThinBorder } from "styleConstants";
 import { Country, StylingObject } from "types";
+import { formatKeyIndex } from "utils/formatKeyIndex";
 
 const styles: StylingObject = {
   tr: {
@@ -16,8 +17,8 @@ interface TableRowProps {
 function TableRow({ countryData }: TableRowProps) {
   return (
     <tr style={styles.tr}>
-      {columns.map((key) => {
-        return <td key={key}>{countryData[key]}</td>;
+      {columns.map((key, index) => {
+        return <td key={formatKeyIndex(key, index)}>{countryData[key]}</td>;
       })}
     </tr>
   );
