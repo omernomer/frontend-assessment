@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SortDirection, SortOptions } from "../types";
+import { SortDirection, SortOptions } from "types";
 
 export const useSort = (
   initialSortBy: SortOptions,

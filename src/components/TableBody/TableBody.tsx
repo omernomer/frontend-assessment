@@ -1,5 +1,5 @@
-import { Country } from "../../types";
-import TableRow from "../TableRow";
+import TableRow from "components/TableRow";
+import { Country } from "types";
 
 interface TableBodyProps {
   sortedCountries: Country[];

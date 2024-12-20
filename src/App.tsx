@@ -1,9 +1,10 @@
 import "./App.css";
 import TableBody from "./components/TableBody";
 import TableHead from "./components/TableHead";
+import { columns } from "./data/columns";
 import { useSort } from "./hooks/useSort";
 import { useSortedCountries } from "./hooks/useSortedCountries";
-import { SortDirection, SortOptions, StylingObject } from "./types";
+import { SortDirection, StylingObject } from "./types";
 
 const styles: StylingObject = {
   table: {
@@ -14,7 +15,7 @@ const styles: StylingObject = {
 
 function App() {
   const { sortBy, sortDirection, sortCountriesBy, renderSortIcon } = useSort(
-    SortOptions.country,
+    columns[0],
     SortDirection.asc
   );
   const sortedCountries = useSortedCountries(sortBy, sortDirection);

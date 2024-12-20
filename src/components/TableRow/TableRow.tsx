@@ -1,5 +1,6 @@
-import { greyThinBorder } from "../../styleConstants";
-import { Country, SortOptions, StylingObject } from "../../types";
+import { columns } from "data/columns";
+import { greyThinBorder } from "styleConstants";
+import { Country, StylingObject } from "types";
 
 const styles: StylingObject = {
   tr: {
@@ -15,8 +16,8 @@ interface TableRowProps {
 function TableRow({ countryData }: TableRowProps) {
   return (
     <tr style={styles.tr}>
-      {Object.values(SortOptions).map((key) => {
-        return <td key={key}>{countryData[key as keyof Country]}</td>;
+      {columns.map((key) => {
+        return <td key={key}>{countryData[key]}</td>;
       })}
     </tr>
   );

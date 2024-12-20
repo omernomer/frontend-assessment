@@ -1,5 +1,6 @@
-import { colors, greyThinBorder } from "../../styleConstants";
-import { SortOptions, StylingObject } from "../../types";
+import { columns } from "data/columns";
+import { colors, greyThinBorder } from "styleConstants";
+import { SortOptions, StylingObject } from "types";
 
 const styles: StylingObject = {
   th: {
@@ -23,7 +24,7 @@ function TableHead({ sortCountriesBy, renderSortIcon }: TableHeadProps) {
   return (
     <thead>
       <tr>
-        {Object.values(SortOptions).map((key) => {
+        {columns.map((key) => {
           return (
             <th
               style={styles.th}
