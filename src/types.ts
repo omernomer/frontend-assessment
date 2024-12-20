@@ -1,20 +1,12 @@
 import { CSSProperties } from "react";
+import { columns } from "./data/columns";
 
-// Enum for sorting directions
 export enum SortDirection {
   asc = "asc",
   desc = "desc",
 }
 
-// Enum for sorting options related to country data
-export enum SortOptions {
-  country = "country",
-  population = "population",
-  deaths = "deaths",
-  recovered = "recovered",
-  lat = "lat",
-  lng = "lng",
-}
+export type SortOptions = typeof columns[number];
 
 export interface Country {
   confirmed: number;
