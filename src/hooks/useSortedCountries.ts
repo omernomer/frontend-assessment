@@ -1,6 +1,6 @@
+import countriesList from "data/countries";
 import { useMemo } from "react";
-import countriesList from "../data/countries";
-import { SortDirection, SortOptions } from "../types";
+import { SortDirection, SortOptions } from "types";
 
 export const useSortedCountries = (
   sortBy: SortOptions,
