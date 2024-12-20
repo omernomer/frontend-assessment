@@ -14,5 +14,5 @@ export const useSortedCountries = (
         return a[sortBy] < b[sortBy] ? 1 : -1;
       }
     });
-  }, [countriesList, sortBy, sortDirection]);
+  }, [sortBy, sortDirection]);
 };
